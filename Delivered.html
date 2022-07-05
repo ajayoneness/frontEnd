@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>New order</title>
+<link rel=stylesheet type="text/css" href="css/style.css">
+    
+</head>
+    
+<body>
+   <div class=container>
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <span class=icon><ion-icon name="code-slash-outline"></ion-icon></span>
+                        <span class="title">codeAj</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="index.html">
+                        <span class=icon><ion-icon name="home-outline"></ion-icon></span>
+                        <span class="title">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="new_order.html">
+                        <span class=icon><ion-icon name="reorder-four-outline"></ion-icon></span>
+                        <span class="title">New order</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="confirmed.html">
+                        <span class=icon><ion-icon name="time-outline"></ion-icon></span>
+                        <span class="title">Confirmed</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="Delivered.html">
+                        <span class=icon><ion-icon name="code-download-outline"></ion-icon></span>
+                        <span class="title">Delivered</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class=icon>!</span>
+                        <span class="title">.............</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class=icon>!</span>
+                        <span class="title">................</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div> 
+    
+    
+    <div class=main>
+        <h1>Order Delivered</h1>
+        <div  class='order-table'>
+            <table id=customers>
+                <tr>
+                    <th>Id</th>
+                    <th>Full Name</th>
+                    <th>Address</th>
+                    <th>Quantity</th>
+                    <th>Date</th>
+                    <th>Date of Delivered</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Ajay Pandit</td>
+                    <td>Ratnagiri, Bhopal</td>
+                    <td>3</td>
+                    <td>2022-02-02</td>
+                    <td>2022-02-02</td>
+                </tr>
+                
+            </table>
+        
+        </div>
+ 
+    </div>
+    
+    
+    
+    
+    
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    
+    <script>
+    //menu toggle 
+        
+        let toggle = document.querySelector('.toggle');
+        let navigation = document.querySelector('.navigation');
+        let main = document.querySelector('.main');
+        
+        toggle.onclick = function(){
+            navigation.classList.toggle('active');
+            main.classList.toggle('active')
+        }
+        
+    
+    </script>
+    
+
+</body>
+</html>
